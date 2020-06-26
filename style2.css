@@ -1,0 +1,319 @@
+body {
+    
+    font-family: 'Karla', sans-serif;
+}
+
+header{
+    position: fixed;
+    padding: 12px 0;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.center{
+    position: sticky;    
+    margin: 10px 10%;
+}
+
+.logo{
+    width: 35px;
+}
+
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline-block;
+    font-size: 22px;
+    text-transform: uppercase;
+    vertical-align: 30%;
+    font-weight: 700;
+}
+
+h1 a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    top: 13px;
+    /* vertical-align: 25%; */
+}
+
+nav li {
+    display: inline;
+    margin-left: 1px;
+}
+
+nav a {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: #7e0000;
+}
+
+.banner {
+    width: 100%;
+}
+
+
+.titulo-principal {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    
+}
+
+.principal{
+    padding: 3em 0;
+    background-color: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.principal p {
+    margin: 0 0 0.8em;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.principal strong {
+    font-weight: bold;
+
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.fotos-principais{
+    padding: 3em 0;
+}
+
+.fotos-principais img{
+    width: 30%;
+    padding: 0 10px;
+}
+
+.fotos-principais img:hover {
+    transform: scale(1.3);
+}
+
+.mapa {
+    background: linear-gradient(#FEFEFE, #4d4d4d) ;
+    padding: 0 0 6em 0;
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+
+.beneficios {
+    padding: 3em 0;
+    background-color: #2e2e2e;
+}
+
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.8;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.itens:before {
+    content: "★";
+}
+
+.imagem-beneficios {
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 25px 0 #000000;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
+}
+
+
+.video {
+    width: 560px;
+    margin: 4em auto 0 auto;   
+    padding-bottom: 3em; 
+}
+
+/* Página Produtos */
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px #000000 solid;
+    border-radius: 10px;
+}
+
+.produtos li:hover {
+    border-color: #C78c20;
+}
+
+.produtos li:active {
+    border-color: #088c19;
+}
+
+.produtos li:hover h2 {
+    font-size: 35px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+
+    text-align: center;
+    background-image: url(imagens/bg.jpg);
+    padding: 40px 0;
+}
+
+footer img {
+    width: 30px;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+
+/* Página Contato 
+
+main {
+    
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 30%;
+    padding: 15px 0;
+    background-color: orange;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s background;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background-color: orangered;
+    transform: scale(1.1);
+}
+
+table {
+    margin: 20px 40px;
+}
+
+thead {
+    background-color: #555555;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 15px 18px;
+} */
+
+/*
+
+@media screen and (max-width: 480px){
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
+} */
